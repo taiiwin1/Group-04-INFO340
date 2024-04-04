@@ -1,1 +1,36 @@
+body {
+    font-family: 'Helvetica';
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 20px;
+    color: #333; 
+}
 
+h1 {
+    text-align: center;
+  }
+
+h1, h2, h3 {
+    color: #007bff; 
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+a {
+    color: #007bff; 
+}
+
+a:hover {
+    color: #0056b3; 
+
+.banner {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
