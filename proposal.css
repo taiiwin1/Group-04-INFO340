@@ -8,10 +8,11 @@ body {
 
 h1 {
     text-align: center;
-  }
+    color: #8B4513; /* Dark Goldenrod */
+}
 
 h1, h2, h3 {
-    color: #007bff; 
+    color: #800080; /* Purple */
 }
 
 section {
@@ -19,11 +20,12 @@ section {
 }
 
 a {
-    color: #007bff; 
+    color: #800080; /* Purple */
 }
 
 a:hover {
-    color: #0056b3; 
+    color: #8B4513; /* Dark Goldenrod */
+}
 
 .banner {
     text-align: center;
