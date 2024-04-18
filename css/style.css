@@ -18,14 +18,21 @@ header {
 
 .menu-icon {
   /* Hamburger menu icon styling */
+
 }
 
-.title {
-  /* Title styling */
+.menu-icon img, .mascot img{
+  width: 50px;
+  height: auto;
 }
 
 .mascot {
   /* UW mascot image styling */
+}
+
+.title {
+  /* Title styling */
+
 }
 
 .search-bar {
