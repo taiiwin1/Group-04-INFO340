@@ -70,6 +70,7 @@ header {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  flex: 0 0 250px;
 }
 
 .card img {
