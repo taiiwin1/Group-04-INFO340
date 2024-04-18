@@ -21,8 +21,13 @@ header {
 
 }
 
-.menu-icon img, .mascot img{
+.menu-icon img{
   width: 50px;
+  height: auto;
+}
+
+.mascot img {
+  width: 60px;
   height: auto;
 }
 
@@ -31,12 +36,15 @@ header {
 }
 
 .title {
-  /* Title styling */
-
+  text-align: center;
+  font-size: 23px;
+  font-family: 'Andale Mono', monospace;
+  font-weight: bold;
 }
 
 .search-bar {
   margin: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .search-bar input {
@@ -48,6 +56,7 @@ header {
 
 .category-dropdown {
   margin: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .category-dropdown select {
@@ -70,12 +79,14 @@ header {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  flex: 0 0 250px;
+  flex: 1 1 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
 .card img {
   width: 100%;
   height: auto;
+  border-bottom: 1px solid #ccc;
 }
 
 .card h2 {
