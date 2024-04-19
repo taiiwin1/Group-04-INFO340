@@ -16,11 +16,6 @@ header {
   padding: 10px;
 }
 
-.menu-icon {
-  /* Hamburger menu icon styling */
-
-}
-
 .menu-icon img{
   width: 50px;
   height: auto;
@@ -29,10 +24,6 @@ header {
 .mascot img {
   width: 60px;
   height: auto;
-}
-
-.mascot {
-  /* UW mascot image styling */
 }
 
 .title {
@@ -97,4 +88,58 @@ header {
 .card p {
   margin-top: 5px;
   font-size: 14px;
+}
+
+@media screen and (max-width: 598px) {
+  .menu-icon {
+    display: inline-block; 
+  }
+
+  .title {
+    text-align: center; 
+  }
+
+  .mascot {
+    display: inline-block; 
+  }
+
+  .category-dropdown select {
+    width: 100%;
+  }
+
+  .card {
+    width: calc(100% - 20px); 
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .menu-icon {
+    display: none; 
+  }
+
+  .navigation {
+    display: flex; 
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .navigation a {
+    font-size: 22px;
+    color: #555; 
+    margin-right: 20px;
+    text-decoration: none; 
+    font-weight: bold; 
+  }
+
+  .navigation a:hover {
+    color: #000; 
+  }
+
+  .mascot {
+    display: inline-block; 
+  }
+
+  .title {
+    text-align: left; 
+  }
 }
