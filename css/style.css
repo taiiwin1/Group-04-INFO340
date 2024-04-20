@@ -28,6 +28,7 @@ header {
 
 .title {
   text-align: center;
+  color: rgb(236, 236, 236);
   font-size: 23px;
   font-family: 'Andale Mono', monospace;
   font-weight: bold;
