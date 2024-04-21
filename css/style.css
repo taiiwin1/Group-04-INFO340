@@ -32,6 +32,7 @@ header {
   font-size: 23px;
   font-family: 'Andale Mono', monospace;
   font-weight: bold;
+  margin-left: -200px;
 }
 
 .search-bar {
@@ -94,6 +95,7 @@ header {
 /* styling for login page */
 body.login-page {
   background-image: url('../img/loginbackground.jpg');
+  background-position: 0;
   margin: 0;
   padding: 0;
 }
@@ -104,20 +106,6 @@ body.login-page {
   align-items: center;  
   min-height: 100vh;  
   padding: 20px;  
-}
-
-.login-page header {
-  background-color: #4b2e83;  
-  color: rgb(236, 236, 236);
-  padding: 10px 20px; 
-  display: flex;
-  align-items: center; 
-  justify-content: space-between; 
-  flex-wrap: wrap; 
-}
-
-.login-page .title h1 {
-  margin-left: -200px;
 }
 
 .login-container {
@@ -177,6 +165,105 @@ body.login-page {
   width: 100%;
 }
 
+/*about us styling*/
+.content {
+  font-family: cursive;
+  max-width: 800px; 
+  margin: 40px auto 40px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+  border-radius: 10px;
+  background-color: #fcfcfc; 
+}
+
+.content h2 {
+  color: #4b2e83;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+ul {
+  padding: 0;
+  text-align: center; 
+  background-color: #4b2e83;
+  padding: 10px;
+}
+
+ul li {
+  display: inline;
+  margin: 0 10px; 
+}
+
+ul li a {
+  padding: 8px 12px;
+  color: white; 
+  font-weight: bold;
+}
+
+ul li a:hover {
+  background-color: #9c7e2b; 
+  color: #4b2e83; 
+  border-radius: 5px;
+}
+
+#what-is, #missions, #who-we-are {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin: 20px auto; 
+  padding: 20px;
+  border: 2px solid #4b2e83;
+  border-width: 2px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+  max-width: 700px; 
+}
+
+#what-is h2, #missions h2, #who-we-are h2 {
+  font-family: cursive;
+  color: #4b2e83;
+  margin-bottom: 15px;
+}
+
+#what-is p, #missions p, #who-we-are p, h3{
+  font-family: cursive;
+  text-align: center;
+  color: #000000; 
+  max-width: 500px; 
+}
+
+.page-container {
+  display: flex; 
+  flex-wrap: wrap; 
+}
+
+.left-column, .right-column {
+  flex: 30%; 
+  padding: 10px;
+}
+
+.image-container {
+  display: flex;
+  background-color: white;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 80%; 
+  height: auto; 
+  border-radius: 8px;
+}
+
+.image-container p {
+  color: #333;
+  margin-top: 5px;
+}
 
 @media screen and (max-width: 598px) {
   .menu-icon {
