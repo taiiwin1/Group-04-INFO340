@@ -5,7 +5,11 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -67,18 +71,19 @@ header {
 }
 
 .card {
-  width: calc(50% - 20px);
+  background-color: #fff;
+  width: calc(33.333% - 20px); 
   margin: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  flex: 1 1 250px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  padding: 20px;
+  border: 1px solid #ddd; 
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card img {
   width: 100%;
-  height: auto;
+  height: 80%;
   border-bottom: 1px solid #ccc;
 }
 
