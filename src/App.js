@@ -10,8 +10,8 @@ export function App() {
     <div>
       <Header />
       <HomePage />
-      {/* <AboutPage /> */}
-      {/* <LoginPage /> */}
+      <AboutPage /> 
+      <LoginPage />
     </div>
   );
 }
