@@ -1,4 +1,5 @@
 import React from 'react';
+import {Footer} from './Footer';
 import '../style.css';
 
 export function LoginPage() {
@@ -20,6 +21,7 @@ export function LoginPage() {
       <footer>
         © 2024 UW Informatics Students. All rights reserved.
       </footer>
+      <Footer />
     </div>
   );
 }

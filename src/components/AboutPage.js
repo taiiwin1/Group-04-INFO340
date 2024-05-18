@@ -1,5 +1,6 @@
 import React from 'react';
 import '../style.css';
+import {Footer} from './Footer';
 
 export function AboutPage() {
   return (
@@ -69,6 +70,7 @@ export function AboutPage() {
           <img src="img/aboutus6.webp" alt="A picture of the maker fair" />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

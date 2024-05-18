@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {Footer} from './Footer';
 import '../style.css';
 
 const items = [
@@ -40,6 +41,7 @@ export function HomePage() {
           </div>
         ))}
       </div>
+      <Footer />
     </div>
   );
 }
