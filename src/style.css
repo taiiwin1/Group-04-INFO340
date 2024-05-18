@@ -98,7 +98,7 @@ header {
 }
 
 /* styling for login page */
-body.login-page {
+.login-page {
   background-image: url('../public/img/loginbackground.jpg');
   background-position: 0;
   margin: 0;
