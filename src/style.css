@@ -34,7 +34,7 @@ header {
   text-align: center;
   color: rgb(236, 236, 236);
   font-size: 23px;
-  font-family: 'Coda', monospace;
+  font-family: 'Oswald', monospace;
   font-weight: bold;
   margin-left: -200px;
 }
@@ -320,7 +320,7 @@ ul li a:hover {
   }
 
   .title {
-    text-align: left; 
+    text-align: center; 
   }
 }
 
