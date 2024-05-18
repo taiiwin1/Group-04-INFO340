@@ -19,11 +19,11 @@ export function AboutPage() {
       <div className="content">
         <h2>About Us</h2>
         <ul>
-          <li><a href="#what-is">What is UW Makers Exchange?</a></li>
-          <li><a href="#missions">What are our missions?</a></li>
-          <li><a href="#who-we-are">Who we are?</a></li>
+          <li>What is UW Makers Exchange?</li>
+          <li>What are our missions?</li>
+          <li>Who we are?</li>
         </ul>
-        <div id="what-is">
+        <div className="what-is">
           <h2>What is UW Makers Exchange?</h2>
           <p> 
             UW Makers Exchange is an online platform created by and for students at the 
@@ -39,7 +39,7 @@ export function AboutPage() {
             the platform. The exchange facilitates connections between makers and buyers, promoting creativity, collaboration, 
             and entrepreneurship within the UW community</p>
         </div>
-        <div id="missions">
+        <div className="missions">
           <h2>What is our mission?</h2>
           <p>
             The missions of UW Makers Exchange revolve around promoting creativity, sustainability, and community engagement among students. 
@@ -51,7 +51,7 @@ export function AboutPage() {
             which leaves so untouch potential for these talented students... which is where we come in! Out platform will operate year around, and be
             a safe home for students; this is the heart of UW Makers Exchange.</p>
         </div>
-        <div id="who-we-are">
+        <div className="who-we-are">
           <h2>Who we are</h2>
           <p>
             We are a group of 4 Informatics students: William, Billy, Yaphet, and Tai. Our idea originally bloomed out of taking the course INFO 340
