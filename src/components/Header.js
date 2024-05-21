@@ -25,6 +25,11 @@ export function Header() {
       <div className="mascot">
         <img src="img/huskyINFO340.png" alt="UW Husky Mascot" />
       </div>
+      <nav className="navigation">
+        <Link to="/">Home</Link>
+        <Link to="/about">About Us</Link>
+        <Link to="/login">Login</Link>
+      </nav>
     </header>
   );
 } 
