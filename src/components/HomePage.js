@@ -1,16 +1,25 @@
 import React, { useState } from 'react';
 import {Footer} from './Footer';
+import items from '../data/items.json';
+
 import '../style.css';
-import items from '../data/items.json'
 
 export function HomePage() {
   const [filter, setFilter] = useState('');
+  const [searchQuery, setSearchQuery] = useState('');
 
   const handleFilterChange = (event) => {
     setFilter(event.target.value);
   };
 
-  const filteredItems = items.filter(item => item.category.includes(filter));
+  const handleSearchChange = (event) => {
+    setSearchQuery(event.target.value);
+  };
+
+  const filteredItems = items.filter(item => 
+    item.category.includes(filter) &&
+    item.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   const filteredItems2 = filteredItems.map(item => (
     <div key={item.id} className="card">
@@ -25,7 +34,12 @@ export function HomePage() {
       <main>
         <section>
           <div className="search-bar">
-            <input type="text" placeholder="Search..." />
+            <input 
+              type="text" 
+              placeholder="Search..." 
+              value={searchQuery}
+              onChange={handleSearchChange}
+            />
           </div>
           <div className="category-dropdown">
             <select defaultValue="" onChange={handleFilterChange}>
