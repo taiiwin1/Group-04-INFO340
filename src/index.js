@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './style.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {App} from './App';
 import { BrowserRouter } from 'react-router-dom';
 
@@ -9,7 +10,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <App />
-    </BrowserRouter>,
+    </BrowserRouter>
   </React.StrictMode>
 );
 

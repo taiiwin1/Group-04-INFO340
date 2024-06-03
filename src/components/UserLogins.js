@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ref, push, onValue, off } from 'firebase/database';
 import { db } from '../firebaseConfig';
-
+import { Button, ListGroup, Spinner, Alert } from 'react-bootstrap';
 
 function UserLogins({ userId }) {
  const [logins, setLogins] = useState([]);
@@ -37,7 +37,7 @@ function UserLogins({ userId }) {
 
 
  if (loading) {
-   return <div>Loading...</div>;
+  return <Spinner animation="border" role="status"><span className="visually-hidden">Loading...</span></Spinner>;
  }
 
 
@@ -49,11 +49,13 @@ function UserLogins({ userId }) {
  return (
    <div>
      <h3>User Logins</h3>
-     <button onClick={storeLoginTimestamp}>Add Login Timestamp</button>
+     <Button onClick={storeLoginTimestamp} variant="primary">Add Login Timestamp</Button>
      <ul>
-       {logins.map((login, index) => (
-         <li key={index}>{login.timestamp}</li>
-       ))}
+      <ListGroup>
+        {logins.map((login, index) => (
+          <ListGroup.Item key={index}>{login.timestamp}</ListGroup.Item>
+        ))}
+      </ListGroup>
      </ul>
    </div>
  );
